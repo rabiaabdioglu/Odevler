@@ -2,12 +2,12 @@
 
 
 
-package kart;
+	package kart;
 
-import java.util.Random;
-import java.util.Scanner;
+	import java.util.Random;
+	import java.util.Scanner;
 
-public class kartoyunu {
+	public class kartoyunu {
    
 	public static char kart[][]= new char[4][4];
 	
@@ -38,21 +38,18 @@ public class kartoyunu {
 		tahminn[indextahmin][index1tahmin]=true;}
 		else {
 			tahminn[indextahmin][index1tahmin]=false;
-			tahminn[index][index1]=false;
-		}
+			tahminn[index][index1]=false;		}
 		
 		oyuntahtasi();
 		}
-		System.out.println("Tebrikler...Oyun Bitti...");
-		
-	}
+		System.out.println("Tebrikler...Oyun Bitti...");	}
 	
 	
 	
 
-public static void oyuntahtasi () {
-
-for (int i = 0 ;  i < 4 ; i++) {
+	public static void oyuntahtasi () {
+	
+	for (int i = 0 ;  i < 4 ; i++) {
     System.out.println("____________________");
     for (int j = 0 ; j < 4 ; j++) {
         
@@ -66,22 +63,20 @@ for (int i = 0 ;  i < 4 ; i++) {
         }
     }
     System.out.println("");
-}
-System.out.println("____________________");
+	}
+	System.out.println("____________________");
 
 	}
 	
 	public static boolean BittiMi(){
 
-for (int i = 0 ;  i < 4 ; i++) {
+	for (int i = 0 ;  i < 4 ; i++) {
     for (int j = 0 ; j < 4 ; j++) {
         
         if (tahminn[i][j]==false) {return false;}  }}
-return true;
-    
-
-}
-public static void randomkart(){
+	return true;}
+	
+	public static void randomkart(){
 
 		int r=0;
 			
