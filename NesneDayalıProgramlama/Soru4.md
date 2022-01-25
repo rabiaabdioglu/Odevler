@@ -1,6 +1,6 @@
 ## C#
 
-> String fonksiyonları yazma
+> Girilen cümlenin içinde karakter arama
 
 
 
