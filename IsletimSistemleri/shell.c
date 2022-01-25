@@ -79,7 +79,7 @@ void built_exit(){
 }
 
 void bilgi(){
-printf("\nGRUP-3\n______________________________________________\nG191210089\tMehmet Yalçın\nB201210302\tRabia Abdioğlu\nG171210302\tHüseyin Öztürk\nG201210301\tNagihan Yalçın\nB191210386\tEnes Kayri\n");}
+printf("\nRabia Abdioğlu\n");}
 
 void help(){
 printf("\nBuilt-in komutlar\n-> cd\n-> showpid\n-> exit\n-> bilgi\n-> help\n");}
