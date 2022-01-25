@@ -22,9 +22,9 @@
             
         //bir çok yerde kullanılan değişkenleri en dışta tanımlayıp varsayılan değerler verdim. 
 
-            int ev_genislik=0, ev_yukseklik=0, cati_yukseklik=0, x=0, y=0, kapi_x=0, kapi_y=0, kapi_genislik=1,kapi_yukseklik=1,  dongu_say=0;
-          
-            char kapi_karakter, kat_karakter, cati_karakter;
+int ev_genislik=0, ev_yukseklik=0, cati_yukseklik=0, x=0, y=0, kapi_x=0, kapi_y=0, kapi_genislik=1,kapi_yukseklik=1,  dongu_say=0;
+
+char kapi_karakter, kat_karakter, cati_karakter;
 
 
 
@@ -77,23 +77,23 @@
             //if içinde dikdörtgeni, else içinde üstteki üçgeni çizecek
 
 
-                    // istenilen çatı yüksekliğini ev genişliğini dikkate alarak uzunlamasına yapmaya çalıştım..
-                    if (yedek_yukseklik > (ev_genislik / 2) + 1) {
-                            gotoxy(y - 1, x + cati_yukseklik - 1 - i);
-                            for (int k = 0; k <= cati_genislik; k++)
-                                cout << cati_karakter;
-                            yedek_yukseklik--;
+                // istenilen çatı yüksekliğini ev genişliğini dikkate alarak uzunlamasına yapmaya çalıştım..
+                if (yedek_yukseklik > (ev_genislik / 2) + 1) {
+                        gotoxy(y - 1, x + cati_yukseklik - 1 - i);
+                        for (int k = 0; k <= cati_genislik; k++)
+                            cout << cati_karakter;
+                        yedek_yukseklik--;
 
-                    }
-                    // catinin en üst üçgen kısmı için 
-                    else {
+                }
+                // catinin en üst üçgen kısmı için 
+                else {
 
-                            gotoxy(y + j - 1, x + cati_yukseklik - i - 1);
-                            for (int k = 0; k <= cati_genislik; k++)   cout << cati_karakter;
-                             j++;
-                            cati_genislik -= 2;
-                            Sleep(100);
-                    }
+                        gotoxy(y + j - 1, x + cati_yukseklik - i - 1);
+                        for (int k = 0; k <= cati_genislik; k++)   cout << cati_karakter;
+                         j++;
+                        cati_genislik -= 2;
+                        Sleep(100);
+                }
 
            cout << "\n";
         }
@@ -151,7 +151,8 @@
 
                     if (dongu_say == 0) {
                         //Kullanıcının sonradan değiştirebileceği özellikler için dışarıda tanımlı bir dongu değişkeni tanımladım
-                        //ev ciz fonksiyonu tekrar çağırıldığı zaman kullanıcıdan tekrar değer almasını önlemek  ve varolan değişkenleri bozmadan yenilemek amacıyla
+                        //ev ciz fonksiyonu tekrar çağırıldığı zaman kullanıcıdan 
+                        //tekrar değer almasını önlemek  ve varolan değişkenleri bozmadan yenilemek amacıyla
                 
                         cout << "Genislik:";
                         cin >> ev_genislik;
@@ -247,25 +248,25 @@
 
                                 case 2:
 
-                                                do {//Kapi koordinat degisimi
+                                do {//Kapi koordinat degisimi
 
-                                                    if (sayac != 0)  cout << "\n\nGirdiginiz kapi koordinatlari, evin koordinatinin disinda. \n Lutfen tekrar giriniz.\n";
-                                                    
-                                                    //kapı koordinatı için sınır değerler
+                                    if (sayac != 0)  cout << "\n\nGirdiginiz kapi koordinatlari, evin koordinatinin disinda. \n Lutfen tekrar giriniz.\n";
 
-                                                    cout << "\nkapi x koordinati icin " << x + cati_yukseklik << " - " << x + cati_yukseklik + ev_yukseklik << " arasında bir deger giriniz:";
-                                                    cin >> kapi_x;
+                                    //kapı koordinatı için sınır değerler
 
-                                                    cout << "\nkapi y koordinati icin " << y << " - " << y + ev_genislik << " arasında bir deger giriniz:";
-                                                    cin >> kapi_y;
+                                    cout << "\nkapi x koordinati icin " << x + cati_yukseklik << " - " << x + cati_yukseklik + ev_yukseklik << " arasında bir deger giriniz:";
+                                    cin >> kapi_x;
 
-                                                    sayac++;// ilk seferinde doğru girilirse döngüden çıkacak
-                                                    // yanlış girilirse hata mesajını yukarıdaki if ile göstermiş olur
-                                                }
-                                                
+                                    cout << "\nkapi y koordinati icin " << y << " - " << y + ev_genislik << " arasında bir deger giriniz:";
+                                    cin >> kapi_y;
 
-                                                // girilen koordinat değerleri uygun aralıkta ise döngüden çıkar
-                                               while (kapi_x< x + cati_yukseklik || kapi_x > x + cati_yukseklik + ev_yukseklik || kapi_y<y || kapi_y> ev_genislik + y);
+                                    sayac++;// ilk seferinde doğru girilirse döngüden çıkacak
+                                    // yanlış girilirse hata mesajını yukarıdaki if ile göstermiş olur
+                                }
+
+
+                                // girilen koordinat değerleri uygun aralıkta ise döngüden çıkar
+                               while (kapi_x< x + cati_yukseklik || kapi_x > x + cati_yukseklik + ev_yukseklik || kapi_y<y || kapi_y> ev_genislik + y);
                                                 dongu_say = 1;
                                 ; break;
 
