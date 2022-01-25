@@ -2,6 +2,9 @@
 
 > String fonksiyonları yazma
 
+
+
+
 ```
      class BenimString
         {
@@ -16,6 +19,9 @@
   ```
 
 > ELEMAN SAYİSİ
+
+
+
 ```
             public int ElemanSayisi(string kelime)
             {
@@ -32,6 +38,9 @@
  ```
 
 > BİRLEŞTİRME 
+
+
+
 ```
             public string Birlestir(string kelime1, string kelime2)
             {
@@ -55,6 +64,9 @@
 
   ```
   >ARAYA GİR 
+
+
+
    ```
    public string ArayaGir(int index, string kelime1, string araya_giren_kelime)
             {
@@ -78,6 +90,9 @@
 
 ```
 >DEĞER AL
+
+
+
  ```
  public string DegerAl(int index1, int uzunluk, string kelime1)
             {
@@ -95,7 +110,11 @@
             }
 
 ```
+
 >DİZİYE AYIR
+
+
+
  ```
  public string[] DiziyeAyir(char harf, string kelime1)
             {
@@ -139,7 +158,11 @@
 
 
 ```
+
 >CHAR DİZİYE DÖNÜŞTÜR
+
+
+
  ```
  public char[] CharDiziyeDonustur(string kelime1)
             {
@@ -177,7 +200,11 @@
             }
 
 ```
+
 >DEGER İNDİS
+
+
+
  ```
  public int DegerIndis(string kelime1, string aranan_kelime)
             {
@@ -218,7 +245,11 @@
             }
 
 ```
+
 >SIRALA A dan Zye
+
+
+
  ```
  public string SiralaAZ(string kelime1)
             {
@@ -243,8 +274,13 @@
                 return kelime;
             }
 
+
 ```
+
 >SIRALA Z den Aya
+
+
+
 ```
 
             public string SiralaZA(string kelime1)
@@ -272,7 +308,11 @@
             }
 
 ```
+
 >TERS ÇEVİR
+
+
+
 ```
             public string TersCevir(string kelime1)
             {
@@ -293,7 +333,11 @@
 
 
 ```
+
 > Program sınıfı
+
+
+
 ```
         class Program
         {
