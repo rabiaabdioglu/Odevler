@@ -6,9 +6,11 @@
 
 >> Çalıştırmak için   : 
 >> 
->>  cd  'shell.c nin olduğu klasör'
->>  -> gcc  shell.c -o test
->>  -> ./test 
+>>>  cd    'shell.c nin olduğu klasör'
+>>> 
+>>>   -> gcc  shell.c -o test
+>>> 
+>>>   -> ./test 
 
 
 
