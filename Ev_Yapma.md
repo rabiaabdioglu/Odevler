@@ -221,32 +221,32 @@ char kapi_karakter, kat_karakter, cati_karakter;
 
 
                         switch (menu_secim) {
-                               case 1://Karakter Degisimi 
-                                                menu_secim = 0;
-            
-                                                cout << "\n\nDegistirmek Istediginiz Ozelligi Seciniz:\n";
-                                                cout << "1-Cati:\n";
-                                                cout << "2-Kapi:\n";
-                                                cout << "3-Kat:\n";
-                                                cin >> menu_secim;
-                                                cout << "Karakter Giriniz\n";
+                         case 1://Karakter Degisimi 
+                                menu_secim = 0;
 
-                                                //istenilenin dışında girilen menu değerleri için doğru girilene kadar dönen while
-                                                while (menu_secim != 1 && menu_secim != 2 && menu_secim != 3) {
+                                cout << "\n\nDegistirmek Istediginiz Ozelligi Seciniz:\n";
+                                cout << "1-Cati:\n";
+                                cout << "2-Kapi:\n";
+                                cout << "3-Kat:\n";
+                                cin >> menu_secim;
+                                cout << "Karakter Giriniz\n";
 
-                                                    cout << "Yanlis Secim Yaptiniz. Tekrar Deneyiniz.\n"; cin >> menu_secim;
-                                                }
-                                                //Secime göre evin parçalarından birinin karakteri değişir..
+                                //istenilenin dışında girilen menu değerleri için doğru girilene kadar dönen while
+                                while (menu_secim != 1 && menu_secim != 2 && menu_secim != 3) {
 
-                                                if (menu_secim == 1) { cin >> cati_karakter;  }
-                                                else if (menu_secim == 2) { cin >> kapi_karakter;  }
-                                                else if (menu_secim == 3) { cin >> kat_karakter;  }
-                                                dongu_say = 1;
+                                    cout << "Yanlis Secim Yaptiniz. Tekrar Deneyiniz.\n"; cin >> menu_secim;
+                                }
+                                //Secime göre evin parçalarından birinin karakteri değişir..
+
+                                if (menu_secim == 1) { cin >> cati_karakter;  }
+                                else if (menu_secim == 2) { cin >> kapi_karakter;  }
+                                else if (menu_secim == 3) { cin >> kat_karakter;  }
+                                dongu_say = 1;
                                 ; break;
 
 
 
-                                case 2:
+                          case 2:
 
                                 do {//Kapi koordinat degisimi
 
@@ -274,7 +274,7 @@ char kapi_karakter, kat_karakter, cati_karakter;
                                 // başa dönülünce kullanıcıdan ilk alınan değerler tekrar alınabilsin diye dongu sayı 0 yapıyor.
                                 // her şey sıfırlanmış gibi olduğundan  tekrardan veri alınabiliecek
 
-                                case 3: dongu_say = 0; ev_ciz(); ; break;// basa dönmek için fonksiyonu içinde tekrar çağırıyorum
+                        case 3: dongu_say = 0; ev_ciz(); ; break;// basa dönmek için fonksiyonu içinde tekrar çağırıyorum
                         }
                     }
 
