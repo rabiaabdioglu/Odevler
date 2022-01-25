@@ -101,7 +101,7 @@ int main(){
         int status;
             while(1){
                 pwd();  //varsayÄ±lan prompt
-                 printf("\n\n\e[0;33m%s: sau >\e[0;37m ",buf); 
+                 printf("\n\n\e[0;33m%s: rabia >\e[0;37m ",buf); 
                 //komut alÄ±nÄ±r 
                 cmd_al();   
                 //alÄ±nan komut uygun hale getirilir ve komut parÃ§alarÄ±na ayrÄ±lÄ±r
