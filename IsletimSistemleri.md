@@ -3,6 +3,18 @@
 
 > Basic Shell in Linux
 
+
+![alt text](https://github.com/rabiaabdioglu/Odevler/blob/main/Otopark_IOT/Resim2.jpg)
+
+
+
+
+
+
+
+>KODLAR
+
+
 ```
 
 #include <stdio.h>
