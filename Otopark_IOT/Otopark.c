@@ -7,13 +7,13 @@
 #include "Adafruit_MQTT_Client.h"
 
 // 
-const char *ssid =  "2.KAT";     // Enter your WiFi Name
-const char *pass =  "ccNC54rQ"; // Enter your WiFi Password
+const char *ssid =  "WİFİ ADI";     // Enter your WiFi Name
+const char *pass =  "WİFİ ŞİFRE"; // Enter your WiFi Password
 
 #define MQTT_SERV "io.adafruit.com"
 #define MQTT_PORT 1883
-#define MQTT_NAME "rabiaabdioglu"
-#define MQTT_PASS "aio_TvtQ03oBRJ8cWGjexnhWzFRp4mxJ"
+#define MQTT_NAME "ADAFRUİT KULLANICI ADI"
+#define MQTT_PASS "ADAFRUİT KEY"
 
 
 
