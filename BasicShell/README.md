@@ -2,7 +2,9 @@
 > Basic Shell in Linux
 
 
-![alt text](https://github.com/rabiaabdioglu/Odevler/blob/main/Otopark_IOT/Resim2.jpg)
+![alt text](https://github.com/rabiaabdioglu/Odevler/blob/main/BasicShell/1.png)
+
+![alt text](https://github.com/rabiaabdioglu/Odevler/blob/main/BasicShell/3.png)
 
 
 > Çalıştırmak için :
